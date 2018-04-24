@@ -59,12 +59,12 @@ div#Qs.container {
 	div.question {
 
 		color:#000;
-		font-size: 18px;
+		font-size: 22px;
 	}
 
 	div.thisChoice {
 		
-		font-size: 16px;
+		font-size: 20px;
 		color: #def;
 		line-height: 50px;
 	}
@@ -75,7 +75,7 @@ div#Ans.container {
 }
 	div#text, div#correctAnswer {
 		color: #edd899;
-		font-size: 18px;
+		font-size: 24px;
 	}
 	div#text {
 		
@@ -83,7 +83,7 @@ div#Ans.container {
 	}
 	div.gifCap {
 		color:#faf7ed;
-		font-size: 14px;
+		font-size: 24px;
 	}
 
 div.container#Res {
