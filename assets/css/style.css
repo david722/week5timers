@@ -44,7 +44,7 @@ div#gameArea.jumbotron.text-center {
     background-color: #87CEFA;
 }
 
-img.gifImg {
+img.bigImg {
 	width:75%;
 	height:auto;
 }
@@ -81,7 +81,7 @@ div#Ans.container {
 		
 		color: #b7ecf5;
 	}
-	div.gifCap {
+	div.imgCap {
 		color:#faf7ed;
 		font-size: 24px;
 	}

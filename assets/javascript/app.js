@@ -31,7 +31,7 @@ $(document).ready(function() {
 		},
 
 		{
-			question: "Name the largest freshwater lake in the world?",
+			question: "Name the largest freshwater lake in the world.",
 			choices: ["Lake Minotonca", "Lake Superior", "Lake More Superior", "Big Daddy Lake"],
 			correct: 1,
 			image: "assets/images/lakesuperior.jpg",
@@ -76,24 +76,22 @@ $(document).ready(function() {
 		},
 	];
 
-	// Hides Content at Start Up
+	
 	$("#gameArea").hide();
 
-	// Start Button Click and Hide
+	
 	$("#startBtn").on("click", function(){
 		$("#startGame").hide();
 		newGame();
 	});
 
-	// Reset Button
+	
 	$("#startOverBtn").on("click", function(){
 		$("#Res").hide();
 		newGame();
 	});
 
-	// ======================================================
-	//Function to Start Game After Initial Click
-	// ======================================================
+	
 	function newGame() {
 		$("#gameArea").show();
 		$("#Ans").hide();
@@ -104,14 +102,12 @@ $(document).ready(function() {
 		currentQuestion = 0;
 		questions();
 	}
-	// ==================
-	// Displays Question
-	// ==================
+	
 	function questions() {
 		$("#Ans").hide();
 		$("#Qs").show();
 		answered = true;
-		// Prints Question from Array
+		
 		$(".question").html(triviaQuestions[currentQuestion].question);
 
 		// -----------------------------------------
@@ -179,21 +175,24 @@ $(document).ready(function() {
 		var rightAnswerIndex = triviaQuestions[currentQuestion].correct;
 		console.log(rightAnswerText);
 		console.log(rightAnswerIndex);
-		//GIF IMG
-		var gifLink = triviaQuestions[currentQuestion].image;
-		var Giffy = $("<img>");
-		Giffy.attr("Src", gifLink);
-		Giffy.addClass("gifImg");
-		$("#gif").html(Giffy);
-		// GIF TEXT
-		var gifText = triviaQuestions[currentQuestion].answerText;
+
+		//IMG
+		var imgLink = triviaQuestions[currentQuestion].image;
+		var img = $("<img>");
+		img.attr("Src", imgLink);
+		img.addClass("bigImg");
+		$("#img").html(img);
+		
+		
+		// Img TEXT
+		var imgText = triviaQuestions[currentQuestion].answerText;
 			newCap = $("<div>");
-			newCap.html(gifText);
-			newCap.addClass("gifCap");
-			$("#gifText").html(newCap);
+			newCap.html(imgText);
+			newCap.addClass("imgCap");
+			$("#imgText").html(newCap);
 
 
-		// DISPLAYS AND COUNTS USER ANSWERS/ UnANSWERS
+		
 		if ((userChoice === rightAnswerIndex) && (answered === true)) {
 			correctAnswer++;
 			$("#text").html(text.correct);
@@ -209,7 +208,7 @@ $(document).ready(function() {
 			answered = true;
 		}
 
-		//Last Answer Reveal Timer
+		//Timer
 		if (currentQuestion === (triviaQuestions.length-1)) {
 			setTimeout(results, 10000);
 		} else {
