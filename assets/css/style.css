@@ -1,0 +1,108 @@
+body {
+	background-color: #FFD700;
+}
+
+#jumbo1 {
+	background-image: url("../images/triviaimage.jpg");
+    max-height: 50%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    padding-top: 300px;
+    padding-bottom: 200px;
+    width: 100%;
+}
+
+#triviaTitle {
+	margin-left: auto;
+    margin-right: auto;
+    color:#87CEFA;
+    letter-spacing: 8px;
+    font-family: 'Gugi';
+}
+
+div.jumbotron.text-center#startGame {
+	background-color: rgba(0, 0, 0, 0.01);
+}
+
+	#startBtn {
+		padding:12px 40px 12px 40px;
+		font-size: 25px;
+		background-color: #FF0000;
+		border-color: #FFD700;
+		color: #111;
+		font-family: 'Gugi';
+		letter-spacing: 4px;
+	}
+		#startBtn:hover {
+			background-color: #8f3625;
+			color: #def;
+		}
+
+div#gameArea.jumbotron.text-center {
+	
+    background-color: #87CEFA;
+}
+
+img.gifImg {
+	width:75%;
+	height:auto;
+}
+
+div#Qs.container {
+	font-family: 'Oswald';
+}
+	div#time {
+		font-size: 25px;
+		color: #def;
+	}
+	div.question {
+
+		color:#eb8b2b;
+		font-size: 18px;
+	}
+
+	div.thisChoice {
+		
+		font-size: 16px;
+		color: #def;
+		line-height: 50px;
+	}
+		
+		
+div#Ans.container {
+	font-family: 'Oswald';
+}
+	div#text, div#correctAnswer {
+		color: #edd899;
+		font-size: 18px;
+	}
+	div#text {
+		
+		color: #b7ecf5;
+	}
+	div.gifCap {
+		color:#faf7ed;
+		font-size: 14px;
+	}
+
+div.container#Res {
+	color: #FFC0CB;
+	font-size: 20px;
+	font-family: 'Oswald';
+}
+	div#resultText {
+		color: #eb8b2b;
+	}
+	button#startOverBtn {
+		padding:12px 40px 12px 40px;
+		font-size: 18px;
+		background-color: #8f3625;
+		border-color: #000;
+		color: #def;
+		font-family: 'Gugi';
+		letter-spacing: 4px;
+	}
+		
+
+
