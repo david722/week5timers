@@ -34,11 +34,7 @@ div.jumbotron.text-center#startGame {
 		font-family: 'Gugi';
 		letter-spacing: 4px;
 	}
-		#startBtn:hover {
-			background-color: #8f3625;
-			color: #def;
-		}
-
+		
 div#gameArea.jumbotron.text-center {
 	
     background-color: #87CEFA;
